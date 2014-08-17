@@ -1,0 +1,1 @@
+mem_monitor is a simple nginx http module, which is a demo to show how to use a nginx timer. You can define your get_sys_xxx_func to make a more useful nginx module.

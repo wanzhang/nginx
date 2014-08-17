@@ -1,0 +1,14 @@
+ngx_addon_name=ngx_http_mm_module
+
+HTTP_MODULES="$HTTP_MODULES \
+			  ngx_http_mm_module"
+
+NGX_ADDON_DEPS="$NGX_ADDON_DEPS \
+				$ngx_addon_dir/inc/mem_monitor.h"
+
+				
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS \
+				$ngx_addon_dir/src/mem_monitor.c \
+				$ngx_addon_dir/src/ngx_http_mm_module.c"
+
+CFLAGS="$CFLAGS -I$ngx_addon_dir/inc/"
